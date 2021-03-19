@@ -45,10 +45,5 @@ namespace VendingMachine
         dime = 10,
         quater = 25
     }
-    static class Constant
-    {
-        // public const Coin Nickel = ;
-        //public const int MIN_WIDTH = 5;
-        //public const int MIN_HEIGHT = 6;
-    }
+   
 }
