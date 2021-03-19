@@ -15,7 +15,6 @@ namespace VendingMachine
 
 
             // Selecting Products
-
             while (true)
             {                
                 Console.Write("Select Product: Cola - $1.00 /Chips - $0.5 /Candy - $0.65");
@@ -27,8 +26,7 @@ namespace VendingMachine
                     break;
                 }
 
-                totalAmount = AcceptCoin(totalAmount);
-                Console.WriteLine($"Total Aount: {totalAmount}");
+                totalAmount = AcceptCoin(totalAmount);                
             }
                 
 
