@@ -58,7 +58,7 @@ namespace UnitTest
 
             // Assert
             double actual = Program.CheckCoin(size, weight);
-            Assert.AreEqual(expected, actual, "InValid Coin");
+            Assert.AreNotEqual(expected, actual, "InValid Coin");
         }
 
         [TestMethod]
@@ -109,6 +109,7 @@ namespace UnitTest
             bool actual = Program.SelectProduct(amount, product);
             Assert.AreEqual(expected, actual, "THANK YOU");
         }
+        [TestMethod]
         public void SelectProductFail()
         {
             // Arrange
@@ -119,7 +120,7 @@ namespace UnitTest
 
             // Assert
             bool actual = Program.SelectProduct(amount, product);
-            Assert.AreEqual(expected, actual, "INVALID PRODUCT");
+            Assert.AreNotEqual(expected, actual, "INVALID PRODUCT");
         }
 
     }
