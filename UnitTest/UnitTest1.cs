@@ -17,7 +17,7 @@ namespace UnitTest
             
             
             // Assert
-            double actual = Program.CheckCoin(size, weight); 
+            double actual = BusinessLogic.CheckCoin(size, weight); 
             Assert.AreEqual(expected, actual, "Valid Coin");
         }
         [TestMethod]
@@ -30,7 +30,7 @@ namespace UnitTest
 
 
             // Assert
-            double actual = Program.CheckCoin(size, weight);
+            double actual = BusinessLogic.CheckCoin(size, weight);
             Assert.AreEqual(expected, actual, "Valid Coin");
         }
         [TestMethod]
@@ -43,7 +43,7 @@ namespace UnitTest
 
 
             // Assert
-            double actual = Program.CheckCoin(size, weight);
+            double actual = BusinessLogic.CheckCoin(size, weight);
             Assert.AreEqual(expected, actual, "Valid Coin");
         }
 
@@ -57,7 +57,7 @@ namespace UnitTest
 
 
             // Assert
-            double actual = Program.CheckCoin(size, weight);
+            double actual = BusinessLogic.CheckCoin(size, weight);
             Assert.AreNotEqual(expected, actual, "InValid Coin");
         }
 
@@ -78,7 +78,7 @@ namespace UnitTest
 
 
             // Assert
-            bool actual = Program.SelectProduct(amount, product);
+            bool actual = BusinessLogic.SelectProduct(amount, product);
             Assert.AreEqual(expected, actual, "THANK YOU");
         }
 
@@ -92,7 +92,7 @@ namespace UnitTest
 
 
             // Assert
-            bool actual = Program.SelectProduct(amount, product);
+            bool actual = BusinessLogic.SelectProduct(amount, product);
             Assert.AreEqual(expected, actual, "THANK YOU");
         }
 
@@ -106,7 +106,7 @@ namespace UnitTest
 
 
             // Assert
-            bool actual = Program.SelectProduct(amount, product);
+            bool actual = BusinessLogic.SelectProduct(amount, product);
             Assert.AreEqual(expected, actual, "THANK YOU");
         }
         [TestMethod]
@@ -119,7 +119,7 @@ namespace UnitTest
 
 
             // Assert
-            bool actual = Program.SelectProduct(amount, product);
+            bool actual = BusinessLogic.SelectProduct(amount, product);
             Assert.AreNotEqual(expected, actual, "INVALID PRODUCT");
         }
 
