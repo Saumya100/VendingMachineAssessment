@@ -7,6 +7,7 @@ namespace UnitTest
     [TestClass]
     public class UnitTest1
     {
+        BusinessLogic businessLogic = new BusinessLogic();
         [TestMethod]
         public void CheckCoinNickelSuccess()
         {
@@ -17,7 +18,7 @@ namespace UnitTest
             
             
             // Assert
-            double actual = BusinessLogic.CheckCoin(size, weight); 
+            double actual = businessLogic.CheckCoin(size, weight); 
             Assert.AreEqual(expected, actual, "Valid Coin");
         }
         [TestMethod]
@@ -30,7 +31,7 @@ namespace UnitTest
 
 
             // Assert
-            double actual = BusinessLogic.CheckCoin(size, weight);
+            double actual = businessLogic.CheckCoin(size, weight);
             Assert.AreEqual(expected, actual, "Valid Coin");
         }
         [TestMethod]
@@ -43,7 +44,7 @@ namespace UnitTest
 
 
             // Assert
-            double actual = BusinessLogic.CheckCoin(size, weight);
+            double actual = businessLogic.CheckCoin(size, weight);
             Assert.AreEqual(expected, actual, "Valid Coin");
         }
 
@@ -57,7 +58,7 @@ namespace UnitTest
 
 
             // Assert
-            double actual = BusinessLogic.CheckCoin(size, weight);
+            double actual = businessLogic.CheckCoin(size, weight);
             Assert.AreNotEqual(expected, actual, "InValid Coin");
         }
 
@@ -78,7 +79,7 @@ namespace UnitTest
 
 
             // Assert
-            bool actual = BusinessLogic.SelectProduct(amount, product);
+            bool actual = businessLogic.SelectProduct(amount, product);
             Assert.AreEqual(expected, actual, "THANK YOU");
         }
 
@@ -92,7 +93,7 @@ namespace UnitTest
 
 
             // Assert
-            bool actual = BusinessLogic.SelectProduct(amount, product);
+            bool actual = businessLogic.SelectProduct(amount, product);
             Assert.AreEqual(expected, actual, "THANK YOU");
         }
 
@@ -106,7 +107,7 @@ namespace UnitTest
 
 
             // Assert
-            bool actual = BusinessLogic.SelectProduct(amount, product);
+            bool actual = businessLogic.SelectProduct(amount, product);
             Assert.AreEqual(expected, actual, "THANK YOU");
         }
         [TestMethod]
@@ -119,7 +120,7 @@ namespace UnitTest
 
 
             // Assert
-            bool actual = BusinessLogic.SelectProduct(amount, product);
+            bool actual = businessLogic.SelectProduct(amount, product);
             Assert.AreNotEqual(expected, actual, "INVALID PRODUCT");
         }
 
